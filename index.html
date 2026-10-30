@@ -17,14 +17,16 @@ a{color:inherit}
 :focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 /* header */
-header{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:20;background:var(--ink);border-bottom:1px solid #333}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:18px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:18px;color:var(--paper)}
 .brand img{height:36px;width:auto;display:block}
 .brand span{display:none}
 nav{display:flex;align-items:center;gap:22px;font-size:15px;font-weight:500}
-nav a{text-decoration:none;color:var(--grey)}
-nav a:hover{color:var(--ink)}
+nav a{text-decoration:none;color:#d6d6d6}
+nav a:hover{color:var(--paper)}
+header nav .btn{background:var(--gold);color:var(--ink)}
+header nav .btn:hover{background:#d8aa5a}
 .btn{display:inline-block;border:0;cursor:pointer;font:inherit;font-weight:700;text-decoration:none;padding:13px 22px;border-radius:999px;background:var(--ink);color:var(--paper);transition:background .15s}
 .btn:hover{background:var(--grey)}
 .btn.gold{background:var(--gold);color:var(--ink)}
